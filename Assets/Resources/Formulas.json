@@ -1,0 +1,36 @@
+{
+	"Templates": [
+		{
+			"Kind": "SpikeH1",
+			"Formula": "5"
+		},
+		{
+			"Kind": "SpikeH2",
+			"Formula": "10"
+		},
+		{
+			"Kind": "SpikeH3",
+			"Formula": "15"
+		},
+		{
+			"Kind": "SpikeH4",
+			"Formula": "20"
+		},
+		{
+			"Kind": "TBody",
+			"Formula": "TArmor-EArmor-EHealth"
+		},
+		{
+			"Kind": "EBody",
+			"Formula": "EArmor-TArmor-THealth"
+		},
+		{
+			"Kind": "WeaponDamage",
+			"Formula": "0-WDamage"
+		},
+		{
+			"Kind": "Slots",
+			"Formula": "3"
+		}
+	]
+}

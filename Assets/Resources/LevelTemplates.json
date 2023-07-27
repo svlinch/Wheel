@@ -1,0 +1,240 @@
+{
+	"Templates": [
+		{
+			"Index": 0,
+			"Materials": 100,
+			"Reward": {
+				"MaxReward": 50
+			},
+			"Waves": [
+				{
+					"Delay": 0,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"Index": 1,
+			"Materials": 200,
+			"Reward": {
+				"MaxReward": 50
+			},
+			"Waves": [
+				{
+					"Delay": 0,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel1",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel1",
+							"SplineIndex": 2
+						},
+						{
+							"EnemyId": "Wheel1",
+							"SplineIndex": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"Index": 2,
+			"Materials": 300,
+			"Reward": {
+				"MaxReward": 50
+			},
+			"Waves": [
+				{
+					"Delay": 0,
+					"Spawns": [
+						{
+							"EnemyId": "ArmoredWheel",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel1",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "HealthWheel",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"Index": 3,
+			"Materials": 400,
+			"Reward": {
+				"MaxReward": 50
+			},
+			"Waves": [
+				{
+					"Delay": 0,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"Index": 4,
+			"Materials": 500,
+			"Reward": {
+				"MaxReward": 50
+			},
+			"Waves": [
+				{
+					"Delay": 0,
+					"Spawns": [
+						{
+							"EnemyId": "XWheel",
+							"SplineIndex": 3
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "MaxArmoredWheel",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "MaxArmoredWheel",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "MaxHealthWheel",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "MaxHealthWheel",
+							"SplineIndex": 2
+						},
+						{
+							"EnemyId": "MaxHealthWheel",
+							"SplineIndex": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}

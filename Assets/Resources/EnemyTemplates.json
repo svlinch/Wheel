@@ -1,0 +1,193 @@
+{
+	"Templates": [
+		{
+			"Id": "Wheel0",
+			"NumericParameters":
+			{
+				"Health": 5,
+				"Armor": 0,
+				"Speed": 1,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+						"Damage": 5
+					},
+					"Formula": "TBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "Wheel1",
+			"NumericParameters":
+			{
+				"Health": 15,
+				"Armor": 0,
+				"Speed": 1,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+						"Damage": 5
+					},
+					"Formula": "TBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "ArmoredWheel",
+			"NumericParameters":
+			{
+				"Health": 30,
+				"Armor": 20,
+				"Speed": 1,
+				"Damage": 5,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+					},
+					"Formula": "TBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "MaxArmoredWheel",
+			"NumericParameters":
+			{
+				"Health": 25,
+				"Armor": 1000,
+				"Speed": 1,
+				"Damage": 5,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+					},
+					"Formula": "TBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "HealthWheel",
+			"NumericParameters":
+			{
+				"Health": 100,
+				"Armor": 0,
+				"Speed": 1,
+				"Damage": 5,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+					},
+					"Formula": "TBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "MaxHealthWheel",
+			"NumericParameters":
+			{
+				"Health": 300,
+				"Armor": 0,
+				"Speed": 1,
+				"Damage": 5,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+					},
+					"Formula": "TBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "XWheel",
+			"NumericParameters":
+			{
+				"Health": 200,
+				"Armor": 0,
+				"Speed": 1,
+				"Damage": 5,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+					},
+					"Formula": "TBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		}
+	]
+}

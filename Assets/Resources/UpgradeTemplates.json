@@ -1,0 +1,191 @@
+{
+	"Templates": [
+	{
+			"Id": "Main",
+			"Upgrades": [
+				{
+					"Id": "Slots0",
+					"Price": 100,
+					"ActivateCondition": "",
+					"Changes": [
+						{
+							"Type": "Plus",
+							"TargetId": "Slots",
+							"FormulaId": "Slots"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Id": "Wall",
+			"Upgrades": [
+				{
+					"Id": "Wall",
+					"ActivateCondition": "",
+					"Changes": [
+					]
+				},
+				{
+					"Id": "WallH1",
+					"Price": 0,
+					"ActivateCondition": "Wall",
+					"Changes": [
+						{
+							"Type": "Plus",
+							"TargetId": "Health",
+							"FormulaId": "SpikeH1"
+						}
+					]
+				},
+				{
+					"Id": "WallA1",
+					"Price": 0,
+					"ActivateCondition": "Wall",
+					"Changes": [
+					{
+							"Type": "Plus",
+							"TargetId": "Health",
+							"FormulaId": "SpikeH1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Id": "Spike",
+			"Upgrades": [
+				{
+					"Id": "Spike",
+					"Price": 100,
+					"ActivateCondition": "",
+					"Changes": [
+					]
+				},
+				{
+					"Id": "H0",
+					"Price": 10,
+					"ActivateCondition": "Spike",
+					"Changes": [
+						{
+							"Type": "Plus",
+							"TargetId": "Health",
+							"FormulaId": "SpikeH1"
+						}
+					]
+				},
+				{
+					"Id": "H1",
+					"Price": 50,
+					"ActivateCondition": "H0",
+					"Changes": [
+						{
+							"Type": "Plus",
+							"TargetId": "Health",
+							"FormulaId": "SpikeH2"
+						}
+					]
+				},
+				{
+					"Id": "H2",
+					"Price": 100,
+					"ActivateCondition": "H1",
+					"Changes": [
+						{
+							"Type": "Plus",
+							"TargetId": "Health",
+							"FormulaId": "SpikeH3"
+						}
+					]
+				},
+				{
+					"Id": "H3",
+					"Price": 500,
+					"ActivateCondition": "H2",
+					"Changes": [
+						{
+							"Type": "Plus",
+							"TargetId": "Health",
+							"FormulaId": "SpikeH4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Id": "Turret",
+			"Upgrades": [
+				{
+					"Id": "Turret",
+					"ActivateCondition": "",
+					"Price": 0,
+					"Changes": [
+					]
+				}
+			]
+		},
+		{
+			"Id": "FirePit",
+			"Upgrades": [
+				{
+					"Id": "FirePit",
+					"ActivateCondition": "",
+					"Price": 60,
+					"Changes": [
+					]
+				},
+				{
+					"Id": "FireTurret",
+					"ActivateCondition": "FirePit",
+					"Price": 0,
+					"Changes": [
+					],
+					"WeaponChanges": [
+						{
+							"Type": "Plus",
+							"Weapon": 
+							{
+								"Id": "FireTurret",
+								"Type": "OnTimer",
+								"TargetType": "Common",
+								"Priority": 0,
+								"NumericParameters": 
+								{
+									"Damage": 10,
+									"Cooldown": 1,
+									"Speed": 1
+								},
+								"Formula": "WeaponDamage",
+								"Spawn": "Bullet"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"Id": "CrossTurret",
+			"Upgrades": [
+				{
+					"Id": "CrossTurret",
+					"ActivateCondition": "",
+					"Price": 0,
+					"Changes": [
+					]
+				}
+			]
+		},
+		{
+			"Id": "SpikePit",
+			"Upgrades": [
+				{
+					"Id": "SpikePit",
+					"ActivateCondition": "",
+					"Price": 0,
+					"Changes": [
+					]
+				}
+			]
+		}
+	]
+}

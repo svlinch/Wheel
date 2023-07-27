@@ -1,0 +1,222 @@
+{
+	"Templates": [
+		{
+			"Id": "Wall",
+			"NumericParameters":
+			{
+				"Health": 10,
+				"Armor": 0,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1,
+				"Price": 50
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+					},
+					"Formula": "EBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "Spike",
+			"NumericParameters":
+			{
+				"Health": 20,
+				"Armor": 0,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1,
+				"Price": 50
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+					},
+					"Formula": "EBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "Turret",
+			"NumericParameters":
+			{
+				"Health": 5,
+				"Armor": 0,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1,
+				"Price": 75
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTimer",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+						"Damage": 10,
+						"Cooldown": 1,
+						"Speed": 1
+					},
+					"Formula": "WeaponDamage",
+					"ChangeParameter": "Health",
+					"Spawn": "Bullet"
+				}
+			]
+		},
+		{
+			"Id": "FirePit",
+			"NumericParameters":
+			{
+				"Health": 1000,
+				"Armor": 0,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1,
+				"Price": 100
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+						"Damage": 5
+					},
+					"Formula": "WeaponDamage",
+					"ChangeParameter": "Health",
+					"Impact": 
+					{
+						"Value": -1,
+						"Tick": 0.1,
+						"Duration": 3
+					},
+				}
+			]
+		},
+		{
+			"Id": "CrossTurret",
+			"NumericParameters":
+			{
+				"Health": 5,
+				"Armor": 0,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1,
+				"Price": 75
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTimer",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+						"Damage": 10,
+						"Cooldown": 1,
+						"Speed": 1
+					},
+					"Formula": "WeaponDamage",
+					"ChangeParameter": "Health",
+					"Spawn": "Bullet"
+				}
+			]
+		},
+		{
+			"Id": "SpikePit",
+			"NumericParameters":
+			{
+				"Health": 1000,
+				"Armor": 0,
+				"ArmorPenetration": 0,
+				"Vampire": 0,
+				"DamageMultiplier": 1,
+				"Price": 100
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"NumericParameters": 
+					{
+						"Damage": 5
+					},
+					"Formula": "WeaponDamage",
+					"ChangeParameter": "Health",
+					"Impact": 
+					{
+						"Value": -1,
+						"Tick": 0.1,
+						"Duration": 3
+					},
+				}
+			]
+		},
+		{
+			"Id": "Main",
+			"DisableBuild": true,
+			"NumericParameters":
+			{
+				"Health": 50,
+				"Armor": 0,
+				"Slots": 3,
+				"MaterialsBonus": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"Formula": "EBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		},
+		{
+			"Id": "Foundament",
+			"DisableBuild": true,
+			"NumericParameters":
+			{
+				"Health": 5,
+				"Armor": 0,
+				"DamageMultiplier": 1
+			},
+			"StringParameters": [],
+			"Weapons": [
+				{
+					"Type": "OnTouch",
+					"TargetType": "Common",
+					"Priority": 0,
+					"Formula": "EBody",
+					"ChangeParameter": "Health",
+					"Spawn": null
+				}
+			]
+		}
+	]
+}
