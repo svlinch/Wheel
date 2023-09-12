@@ -7,18 +7,22 @@ namespace Assets.Scripts.GameLogic
     {
         public bool HandleUpdate()
         {
+#if UNITY_ANDROID 
             if (Input.touchCount > 0)
             {
-                var touch = Input.GetTouch(0);
-                if (touch.phase == TouchPhase.Began)
+                var touches = Input.touches;
+                if (touches[0].phase == TouchPhase.Ended)
                 {
-                    HandleMouseDown(touch.position);
+                    HandleMouseDown(touches[0].position);
                 }
             }
+#endif
+#if UNITY_EDITOR
             if (Input.GetMouseButtonDown(0))
             {
                 HandleMouseDown(Input.mousePosition);
             }
+#endif
             return true;
         }
 

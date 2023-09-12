@@ -171,9 +171,7 @@ namespace Assets.Scripts.UI
             void setupPosition()
             {
                 var viewport = Camera.main.WorldToViewportPoint(position.Value);
-                Debug.Log(viewport.y);
-                var screenY = viewport.y < 0.41f ?  viewport.y * _canvas.GetComponent<RectTransform>().sizeDelta.y + 240 :
-                                                   viewport.y * _canvas.GetComponent<RectTransform>().sizeDelta.y - 140;
+                var screenY = viewport.y * _canvas.GetComponent<RectTransform>().sizeDelta.y + 240;
                 
                 _buttonsHolder.anchoredPosition = new Vector2(_buttonsHolder.anchoredPosition.x, screenY);
                 _resetButton.transform.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, screenY);
