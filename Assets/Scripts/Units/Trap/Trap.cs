@@ -41,6 +41,7 @@ namespace Assets.Scripts.Units
         public abstract void SetModel(UnitModel model);
         public abstract void HandleUpdate(float dTime);
         public abstract void SetBattleState(bool state);
+        public abstract void SetSelected(bool state);
         public abstract void HandleDamageEvent(Dictionary<string, float> numeric, List<ImpactTemplate> impacts);
         public abstract bool RemoveCheck();
         public abstract void Remove();

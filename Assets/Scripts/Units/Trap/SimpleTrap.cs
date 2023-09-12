@@ -38,6 +38,11 @@ namespace Assets.Scripts.Units
             }
         }
 
+        public override void SetSelected(bool state)
+        {
+            _visualPart.GetComponentInChildren<MeshRenderer>().material.color = state ? Color.green : Color.white;
+        }
+
         public override void HandleDamageEvent(Dictionary<string, float> numeric, List<ImpactTemplate> impacts)
         {
             ApplyChanges(numeric);
@@ -57,7 +62,7 @@ namespace Assets.Scripts.Units
 
         public override void HandleClick()
         {
-            _eventService.SendMessage(new BaseElementClicked(_indexInList, _model));
+            _eventService.SendMessage(new BaseElementClicked(_indexInList, _model, _visualPart.transform.position));
         }
 
         protected override void ApplyChanges(Dictionary<string, float> numeric)

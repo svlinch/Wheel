@@ -4,7 +4,7 @@
 			"Id": "Wheel0",
 			"NumericParameters":
 			{
-				"Health": 5,
+				"Health": 2,
 				"Armor": 0,
 				"Speed": 1,
 				"ArmorPenetration": 0,

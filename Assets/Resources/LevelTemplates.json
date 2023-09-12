@@ -34,6 +34,140 @@
 					"Spawns": [
 						{
 							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 0.5,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 0.3,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 0.5,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 1
+						},
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 0.3,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 2
+						}
+					]
+				},
+				{
+					"Delay": 0.5,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						}
+					]
+				},
+				{
+					"Delay": 1,
+					"Spawns": [
+						{
+							"EnemyId": "Wheel0",
+							"SplineIndex": 0
+						},
+						{
+							"EnemyId": "Wheel0",
 							"SplineIndex": 1
 						},
 						{

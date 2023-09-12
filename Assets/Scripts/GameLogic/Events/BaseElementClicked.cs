@@ -1,4 +1,5 @@
 using Assets.Scripts.Models;
+using UnityEngine;
 
 namespace Assets.Scripts.Events
 {
@@ -6,10 +7,13 @@ namespace Assets.Scripts.Events
     {
         public int Index;
         public UnitModel Model;
-        public BaseElementClicked(int index, UnitModel model)
+        public Vector3 Position;
+
+        public BaseElementClicked(int index, UnitModel model, Vector3 position)
         {
             Index = index;
             Model = model;
+            Position = position;
         }
     }
 }

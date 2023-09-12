@@ -64,6 +64,7 @@ namespace Assets.Scripts.GameLogic
 
             _buildResources = (int)mainTrap.GetNumericParameters()[StaticParameterTranslator.MATERIALS_BONUS] + _balanceService.GetLevelTemplate(levelIndex).Materials;
             _eventService.SendMessage(new BuildResourcesChanged(_buildResources));
+            _activeElementIndex = -1;
         }
 
         public bool HandleUpdate()
@@ -101,7 +102,17 @@ namespace Assets.Scripts.GameLogic
 
         private bool HandleBaseElemenyClicked(BaseElementClicked e)
         {
+            if (_activeElementIndex >= 0)
+            {
+                _traps[_activeElementIndex].SetSelected(false);
+            }
+            if (_activeElementIndex == e.Index)
+            {
+                _activeElementIndex = -1;
+                return true;
+            }
             _activeElementIndex = e.Index;
+            _traps[_activeElementIndex].SetSelected(true);
             return true;
         }
 
@@ -152,6 +163,7 @@ namespace Assets.Scripts.GameLogic
                 trap.Setup(_activeElementIndex);
                 _traps[_activeElementIndex] = trap;
             }
+            _activeElementIndex = -1;
             return true;
         }
 

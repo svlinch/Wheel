@@ -10,7 +10,11 @@ PrefabInstance:
     - target: {fileID: 2713387624343152122, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b52b7034cce1c5947b4353570a9b7b2c, type: 2}
+      objectReference: {fileID: -876546973899608171, guid: 6b069e61e43af1240881a1823509ff95, type: 3}
+    - target: {fileID: 2713387624343152123, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1126088553787671157, guid: 6b069e61e43af1240881a1823509ff95, type: 3}
     - target: {fileID: 2713387624952827362, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_Name
       value: Spike
@@ -21,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.701
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.011
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.74
+      value: -5.66
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -99,3 +103,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _visualPart: {fileID: 3343219754713706098}
   _statusCanvas: {fileID: 2250561450273089957}
+  _spawnPoint: {fileID: 0}
+  _directionHelp: {fileID: 0}

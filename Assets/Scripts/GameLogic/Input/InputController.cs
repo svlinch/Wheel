@@ -7,6 +7,14 @@ namespace Assets.Scripts.GameLogic
     {
         public bool HandleUpdate()
         {
+            if (Input.touchCount > 0)
+            {
+                var touch = Input.GetTouch(0);
+                if (touch.phase == TouchPhase.Began)
+                {
+                    HandleMouseDown(touch.position);
+                }
+            }
             if (Input.GetMouseButtonDown(0))
             {
                 HandleMouseDown(Input.mousePosition);

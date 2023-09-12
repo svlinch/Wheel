@@ -44,9 +44,10 @@ namespace Assets.Scripts.UI
         [SerializeField]
         private Button _startBattleButton;
         [SerializeField]
-        private Transform _buttonsHolder;
+        private RectTransform _buttonsHolder;
 
         private UnitTemplateHolder _currentActiveTrap;
+        private int _currentActiveIndex;
         private int _currentMaterials;
         private Dictionary<string, TrapButton> _trapButtons = new Dictionary<string, TrapButton>();
 
@@ -65,6 +66,9 @@ namespace Assets.Scripts.UI
                     _canvas.enabled = true;
                     CheckoutShopButtons();
                     SetState(false, false);
+
+                    _currentActiveIndex = -1;
+                    _currentActiveTrap = null;
                     break;
                 default: _canvas.enabled = false; break;
             }
@@ -73,16 +77,26 @@ namespace Assets.Scripts.UI
 
         private bool HandleBaseElementClicked(BaseElementClicked e)
         {
+            if (_currentActiveIndex == e.Index)
+            {
+                _currentActiveTrap = null;
+                _currentActiveIndex = -1;
+                SetState(false, false);
+                return true;
+            }
+
             if (e.Model == null)
             {
                 CheckoutTrapsPrices();
                 _currentActiveTrap = null;
-                SetState(true, false);
+                _currentActiveIndex = e.Index;
+                SetState(true, false, e.Position);
             }
             else
             {
                 _currentActiveTrap = e.Model.Template;
-                SetState(false, true);
+                _currentActiveIndex = e.Index;
+                SetState(false, true, e.Position);
             }
             return true;
         }
@@ -95,6 +109,8 @@ namespace Assets.Scripts.UI
 
         private void ResetButtonClickHandle()
         {
+            _currentActiveIndex = -1;
+            _currentActiveTrap = null;
             SetState(true, false);
             _eventService.SendMessage(new ResetTrapButtonClicked(Mathf.RoundToInt(_currentActiveTrap.GetNumericParameters()[StaticParameterTranslator.PRICE])));
         }
@@ -143,10 +159,25 @@ namespace Assets.Scripts.UI
             }
         }
 
-        private void SetState(bool shop, bool resetButton)
+        private void SetState(bool shop, bool resetButton, Vector3? position = null)
         {
+            if (position != null)
+            {
+                setupPosition();
+            }
             _buttonsHolder.gameObject.SetActive(shop);
             _resetButton.gameObject.SetActive(resetButton);
+            
+            void setupPosition()
+            {
+                var viewport = Camera.main.WorldToViewportPoint(position.Value);
+                Debug.Log(viewport.y);
+                var screenY = viewport.y < 0.41f ?  viewport.y * _canvas.GetComponent<RectTransform>().sizeDelta.y + 240 :
+                                                   viewport.y * _canvas.GetComponent<RectTransform>().sizeDelta.y - 140;
+                
+                _buttonsHolder.anchoredPosition = new Vector2(_buttonsHolder.anchoredPosition.x, screenY);
+                _resetButton.transform.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, screenY);
+            }
         }
     }
 }

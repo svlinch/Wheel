@@ -6,7 +6,7 @@ namespace Assets.Scripts.Units
     {
         public override void HandleClick()
         {
-            _eventService.SendMessage(new BaseElementClicked(_indexInList, null));
+            _eventService.SendMessage(new BaseElementClicked(_indexInList, null, _visualPart.transform.position));
         }
     }
 }

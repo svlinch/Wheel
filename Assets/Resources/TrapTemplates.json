@@ -181,7 +181,7 @@
 			{
 				"Health": 50,
 				"Armor": 0,
-				"Slots": 3,
+				"Slots": 21,
 				"MaterialsBonus": 0,
 				"DamageMultiplier": 1
 			},
@@ -202,7 +202,7 @@
 			"DisableBuild": true,
 			"NumericParameters":
 			{
-				"Health": 5,
+				"Health": 4,
 				"Armor": 0,
 				"DamageMultiplier": 1
 			},

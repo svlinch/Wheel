@@ -18,7 +18,11 @@ PrefabInstance:
     - target: {fileID: 2713387624343152122, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a2a87a1075c7e564b8e6bf55a949bf2e, type: 2}
+      objectReference: {fileID: -876546973899608171, guid: 818289a538e178b4797f711b90200cb6, type: 3}
+    - target: {fileID: 2713387624343152123, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -9083875609903531300, guid: 818289a538e178b4797f711b90200cb6, type: 3}
     - target: {fileID: 2713387624952827362, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_Name
       value: Wall
@@ -29,15 +33,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.438
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.74
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2713387624952827363, guid: d54f78f86e658414f8f678b3bb86469d, type: 3}
       propertyPath: m_LocalRotation.w
